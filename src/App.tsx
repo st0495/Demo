@@ -1,15 +1,16 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import DashBoardScreen from "./containers/Dashboard";
+import Project from "./containers/Projects";
 
 const App = () => {
   return (
     <Router>
       <div>
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <DashBoardScreen />
           </Route>
-          <Route path="/dashboard">
+          <Route exact path="/dashboard">
             <DashBoardScreen />
           </Route>
         </Switch>
